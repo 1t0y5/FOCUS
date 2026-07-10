@@ -1,0 +1,1 @@
+const a=JSON.parse(localStorage.getItem('focusCards')||'[]');document.getElementById('cards').innerHTML=a.length?a.map(c=>`<article class="card-item"><div class="card-date">${c.date}</div><div class="card-text">${c.text}</div></article>`).join(''):'<p class="helper">まだカードはありません。</p>';
